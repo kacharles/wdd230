@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Manipulating DOM using HTML">
+    <meta property="og:title" content="DOM Manipulation">
+    <meta property="og: type" content="video.movie">
+    <meta property="og: url" content="kacharles.github.io">
+    <script src="script/bom.js" defer></script>
+    <title>DOM Document</title>
+    <style>
+        li { 
+           margin: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                BOM APP
+            </h1>
+        </nav>
+    </header>
+    <!-- 
+        Steps to making my fav book of mormon chapters 
+
+        1. Create reference to hold the ul elements value
+        2. Add a click event listener to the add chapter button
+        3. Create a list element at runtime and add the BOM Chapter and a Button
+        4. Create a span element to hold the book of mormon text
+        5. Give make the text content of the button to be an ❌
+        6. Add a click event listener to the the ❌ button 
+    -->
+        <main id="main-content">
+            <h1>
+                📖 Book of Mormon - Top 10
+            </h1>
+            <div id="bom" style="padding: 10px; background-color: #eee; 
+            color: black; width: 33%;">
+                <label for="chapter">Enter Book and Chapter</label> <br>
+                <input type="text" id="chapter"> <br>
+                <button id="btn">Add Chapter</button>
+                <ul id="list"></ul>
+            </div>
+        </main>
+</body>
+
+</html>

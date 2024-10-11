@@ -1,0 +1,63 @@
+
+/* styling the large view of the page */
+@media (min-width: 640px) {
+nav ul { 
+    list-style-type: none;
+    display: flex;
+ 
+}
+nav ul li { 
+    flex: 100%;
+}
+nav #menu { 
+    display: none;
+}
+}
+@media only screen and (min-width: 40rem) { 
+    .parent { 
+        display: grid; 
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px; 
+
+    }
+}
+
+@media (max-width: 640px) { 
+    nav #menu::before { 
+        content: "☰";
+    }
+    nav #menu.activate::before { 
+        content: "X";
+        border-bottom: 2px solid white;
+        display: block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    nav #menu { 
+        padding: 0px;
+        display: block; 
+        color: white;
+        font-size: 2rem;
+        background-color: black;
+    }
+    nav #menu:hover { 
+        text-decoration: none;
+        
+        
+    }
+
+    nav ul li { 
+        display: none;
+    }
+
+
+    .activate li { 
+        display: block;
+    }
+
+    .activate li { 
+        display: block;
+    }
+
+}
