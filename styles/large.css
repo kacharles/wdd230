@@ -24,14 +24,12 @@ nav #menu {
 
 @media (max-width: 640px) { 
     nav #menu::before { 
-        content: "☰";
+        content: "\2630";
     }
     nav #menu.activate::before { 
         content: "X";
         border-bottom: 2px solid white;
         display: block;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
     nav #menu { 
@@ -43,7 +41,6 @@ nav #menu {
     }
     nav #menu:hover { 
         text-decoration: none;
-        
         
     }
 
@@ -60,4 +57,8 @@ nav #menu {
         display: block;
     }
 
+}
+ul li.active a{ 
+    background-color: rgb(211, 211, 211);
+    color: black;  
 }
