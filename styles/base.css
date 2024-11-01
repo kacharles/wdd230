@@ -125,6 +125,7 @@ main h1 {
 }
 .parent { 
     margin: 1rem 2vw;
+    border-bottom: 2px solid black;
 }
 .parent section { 
     border: 1px solid #415541;
