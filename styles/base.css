@@ -7,7 +7,7 @@
 
 /* Set the font-family of the body to Algerian */
 body { 
-    font-family: algerian; 
+    font-family: "Merriweather", sans-serif; 
 }
 
 header { 
@@ -53,10 +53,12 @@ footer {
 header span { 
     align-self: center;
     display: inline;
-    font-size: 24px; 
+    font-size: 32px; 
     font-weight: bold; 
-    font-family: algerian;
+    /* font-family: "Rubik Wet Paint", sans-serif; */
+    font-family: "play", sans-serif;
     padding: 0.5rem; 
+
 }
 
 header img { 
@@ -67,7 +69,7 @@ header img {
 nav { 
    
     /* background-color: rgb(211, 211, 211); */
-    background-color: #000000;
+    background-color: #000;
     /* margin: 0 auto; */
     /* max-width: 100%; */
     max-width: 800px;
@@ -76,7 +78,7 @@ nav {
 
 nav a { 
     display: block;
-    font-family: algerian;
+    font-family: "Merriweather", sans-serif;
     padding: 1rem;
     text-align: center;
     color: white; 
@@ -136,7 +138,7 @@ main h1 {
     
 }
 
-.parent span { 
+.parent h2 { 
     /* background-color: #415541; */
     background-color: rgb(211, 211, 211);
     color: black; 
@@ -149,6 +151,7 @@ main h1 {
 
 .parent p { 
     padding: 10px;
+    font-family: "Merriweather", sans-serif;
 } 
 
 footer { 
@@ -161,7 +164,7 @@ footer p {
     margin: 1rem 0; 
     font-size: 16 px; 
     font-weight: bold;
-    font-family: algerian;
+    font-family: "Merriweather", sans-serif;
 }
 
 

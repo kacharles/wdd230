@@ -60,5 +60,5 @@ nav #menu {
 }
 ul li.active a{ 
     background-color: rgb(211, 211, 211);
-    color: black;  
+    color: #000;  
 }
