@@ -7,7 +7,7 @@
 body { 
     font-family: "Oxygen", sans-serif; 
     font-size: 16px;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 /* Styling the header section */
@@ -26,7 +26,7 @@ header {
 header h1 { 
     font-family: "Bebas Nue", sans-serif;
     padding: 1rem;
-    font-weight: 400px;
+    font-weight: 700;
     justify-self: center;
     text-transform: uppercase;
     font-size: 24px;
@@ -38,14 +38,29 @@ nav {
     margin: 0 auto; 
     max-width: 900px;
 }
+#drop-down-menu { 
+    width: 40px; 
+    margin: 0 auto;
+    line-height: 20px;
 
-nav ul { 
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
 }
+nav #drop-down-menu::before { 
+    content: "\2630";
+    font-size: 24px;
+    display: block;
+}
+nav #drop-down-menu.activate::before { 
+    /* content: "\2716"  */
+    content: "\2716";
+}
+
+.activate li { 
+    display: block;
+}
+
+
 nav ul li { 
-    flex: 1 1 100%;
+    display: none;
 }
 nav a { 
     display: block;
@@ -65,14 +80,18 @@ nav a:hover {
 nav a:active, a:visited { 
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 main { 
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
+    background-color: lightgray;
 }
 h2 { 
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     width: 350px;
+    margin: 0 auto;
+    text-align: center;
 }
 h2, h3 {
     font-family: "Bebas Nue", sans-serif;
@@ -80,6 +99,31 @@ h2, h3 {
     color: rgb(0, 0, 139);
 
 }
+
+table { 
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 2rem;
+}
+th, td { 
+    padding: 0.5rem;
+}
+table, th, td { 
+    border:  1px solid #ffffff; 
+    border-collapse: collapse;
+    background-color: #d3d3d3;
+}
+caption { 
+    color: #00008b; 
+    font-weight: bold;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 
 footer { 
     display: grid;
@@ -89,12 +133,12 @@ footer {
     margin: 0 auto;
     background-color: darkblue;
     text-align: center;
-    min-height: 4rem;
+    min-height: 6rem;
 }
 footer #copyright { 
     color: white;
     align-self: center;
 }
 footer #lastModified { 
-    color: yellow;
+    color: #ffff00;
 }
