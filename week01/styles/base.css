@@ -8,6 +8,7 @@ body {
     font-family: "Oxygen", sans-serif; 
     font-size: 16px;
     font-weight: 300;
+    
 }
 
 /* Styling the header section */
@@ -34,7 +35,7 @@ header h1 {
 
 nav { 
     /* background-color: rgba(0,0,139, 0.8); */
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238); /*Very Light Gray*/
     margin: 0 auto; 
     max-width: 900px;
 }
@@ -64,7 +65,7 @@ nav ul li {
 }
 nav a { 
     display: block;
-    color: darkblue;
+    color: #000000;
     font-family: "Oxygen", sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -73,9 +74,9 @@ nav a {
     text-decoration: none;
 }
 nav a:hover { 
-    background-color: rgba(255, 255, 255, 0.2);
-    color: hotpink;
-    box-shadow: 0 0 10px rgb(0, 0, 0), inset 0 0 10px rgba(255, 255, 0, 0.5);
+    background-color: rgb(211, 211, 211, 0.5);
+    color: darkblue;
+    box-shadow: 0 0 2px rgb(0, 0, 0), inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 nav a:active, a:visited { 
     background-color: rgba(0, 0, 0, 0.3);
@@ -86,6 +87,8 @@ main {
     margin: 0 auto;
     padding: 1rem;
     background-color: lightgray;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: black;
 }
 h2 { 
     border-bottom: 2px solid white;
@@ -96,7 +99,8 @@ h2 {
 h2, h3 {
     font-family: "Bebas Nue", sans-serif;
     padding:0.5rem 0;
-    color: rgb(0, 0, 139);
+    /* color: rgb(0, 0, 139); */
+    color: #000050;
 
 }
 
