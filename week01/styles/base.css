@@ -101,7 +101,11 @@ h2, h3 {
     padding:0.5rem 0;
     /* color: rgb(0, 0, 139); */
     color: #000050;
+}
 
+p { 
+    color: black;
+    line-height: 25px;
 }
 
 table { 

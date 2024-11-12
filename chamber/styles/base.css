@@ -1,0 +1,139 @@
+/* General Styling */
+* { 
+    margin: 0px; 
+    padding: 0px;
+    box-shadow: border-box;
+}
+/* Styling the header and all its content*/
+
+header, #mobile-menu, main, footer { 
+    max-width: 900px;
+    padding: 0.5rem; 
+    margin: 0 auto;
+}
+
+header { 
+    display: flex;
+    background-color: darkblue;
+    justify-content: space-around;
+}
+
+/* Display the div in the header with the logo image and business name as flex */
+.logo-img { 
+    display: flex;
+    /* padding: 1rem;  */
+}
+.logo-img img { 
+    width: 150px;
+    height: auto;
+    display: none;
+}
+.logo-img h1 {  
+    align-self: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffff00;
+    font-family: "Times New Roman", sans-serif;
+    text-transform: uppercase;
+}
+
+header nav { 
+    /* background-color: #eee; */
+    align-content: center;
+}
+
+/* Hide the navigation list in the small menu.
+More styling for this is done in the large css called large.css file */
+
+header nav ul li { 
+    display: none;
+}
+
+/* styling the drop-down menu button */
+header #btn { 
+    background-color: #eee;
+    color: black;
+    border: 2px solid black;
+    font-size: 20px; 
+    line-height: 25px;
+    width: 30px;
+}
+
+header nav button:hover { 
+    cursor: pointer;
+}
+
+header nav a { 
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+header nav a:hover { 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000080;
+}
+/* End of styling header content */
+
+/* Styling the mobile-menu list */
+
+#mobile-menu { 
+    /* display: block; */
+    background-color: #eee;
+    color: black;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 0;
+}
+#mobile-menu li { 
+    display: none;
+    list-style: none;
+    flex: 1 1 100%;
+}
+
+#mobile-menu a { 
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    padding: 1rem;
+}
+
+#mobile-menu a:hover { 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: blue;
+    /* padding: 0.5rem; */
+}
+
+/* Adding a content to the button before and after click */
+header #btn::before { 
+    content: "\2630";
+}
+header #btn.activate::before { 
+    content: "X";
+}
+#drop-down .activate li { 
+    display: block;
+}
+/* Styling the main content */
+main { 
+    background-color: lightgray;
+    text-align: center;
+    min-height: 1000px;
+}
+
+footer { 
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: darkblue;
+    color: yellow;
+}
+
+#copyright { 
+    color: white; 
+    text-align: center;
+}
