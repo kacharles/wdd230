@@ -8,12 +8,13 @@
 
 header, #mobile-menu, main, footer { 
     max-width: 900px;
-    padding: 0.5rem; 
+    padding: 1rem; 
     margin: 0 auto;
 }
 
 header { 
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     background-color: darkblue;
     justify-content: space-around;
 }
@@ -30,7 +31,7 @@ header {
 }
 .logo-img h1 {  
     align-self: center;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     font-size: 1rem;
     font-weight: bold;
     color: #ffff00;
@@ -41,6 +42,11 @@ header {
 header nav { 
     /* background-color: #eee; */
     align-content: center;
+    justify-items: end;
+    
+}
+header nav ul { 
+    border-radius: 10px;
 }
 
 /* Hide the navigation list in the small menu.
@@ -52,9 +58,10 @@ header nav ul li {
 
 /* styling the drop-down menu button */
 header #btn { 
-    background-color: #eee;
-    color: black;
-    border: 2px solid black;
+    background-color: transparent;
+    color: yellow;
+    border: none;
+    /* border: 2px solid black; */
     font-size: 20px; 
     line-height: 25px;
     width: 30px;
@@ -80,23 +87,26 @@ header nav a:hover {
 
 #mobile-menu { 
     /* display: block; */
+    
     background-color: #eee;
     color: black;
     margin: 0 auto;
     justify-content: space-evenly;
     padding: 0;
 }
-#mobile-menu li { 
+
+ #mobile-menu li { 
     display: none;
     list-style: none;
     flex: 1 1 100%;
-}
+} 
+ /* Comment out the styling the hide the menu so now it's showing */
 
 #mobile-menu a { 
     display: block;
     text-decoration: none;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     color: black;
     padding: 1rem;
@@ -117,13 +127,82 @@ header #btn.activate::before {
 }
 #drop-down .activate li { 
     display: block;
-}
-/* Styling the main content */
+} 
+ /* Comment out the drop-down that show the menu */
+
+
 main { 
     background-color: lightgray;
-    text-align: center;
-    min-height: 1000px;
+    /* min-height: 1000px; */
 }
+
+main img { 
+    width: 100%;
+    height: auto;
+}
+.hero{ 
+    position: relative;
+    /* border: 1px solid black; */
+}
+.hero button { 
+    width: 25%;
+    padding: 1rem;
+    background-color: darkblue;
+    color: yellow;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    cursor: pointer;
+}
+.sec-one { 
+    font-size: 16px;
+}
+.sec-one .card { 
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+    
+}
+
+.card span { 
+    background-color: darkblue;
+    color: yellow; 
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+.card p { 
+    padding: 10px;
+}
+
+/* Section two styling */
+
+.sec-two { 
+    font-size: 16px;
+}
+.sec-two .cards { 
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+    
+}
+
+.cards span { 
+    background-color: darkblue;
+    color: yellow; 
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+.cards p { 
+    padding: 10px;
+}
+
 
 footer { 
     display: grid; 
@@ -131,9 +210,9 @@ footer {
     justify-items: center;
     background-color: darkblue;
     color: yellow;
+    text-align: center;
 }
 
 #copyright { 
     color: white; 
-    text-align: center;
 }

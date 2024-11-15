@@ -25,12 +25,13 @@ nav #menu {
 @media (max-width: 640px) { 
     nav #menu::before { 
         content: "\2630";
-    }
+    } 
+    
     nav #menu.activate::before { 
         content: "X";
         border-bottom: 2px solid white;
         display: block;
-    }
+    } 
 
     nav #menu { 
         padding: 0px;
@@ -62,3 +63,4 @@ ul li.active a{
     background-color: rgb(211, 211, 211);
     color: #000;  
 }
+

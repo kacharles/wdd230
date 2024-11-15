@@ -92,12 +92,12 @@ nav a:hover {
     text-decoration: overline; 
 }
 
-nav #menu::before { 
+/* nav #menu::before { 
     content: "☰";
 }
 nav #menu.activate::before { 
     content: "X";
-}
+} */
 
 nav #menu { 
     padding: 0px;
@@ -115,6 +115,12 @@ nav #menu:hover {
 main { 
     max-width: 800px;
     margin: 0 auto; 
+}
+
+main .hero img { 
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
 }
 
 main h1 { 
@@ -162,7 +168,7 @@ footer {
 }
 footer p { 
     margin: 1rem 0; 
-    font-size: 16px; 
+    font-size: 16 px; 
     font-weight: bold;
     font-family: "Merriweather", sans-serif;
 }

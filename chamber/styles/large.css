@@ -5,6 +5,7 @@
     .logo-img h1 { 
         font-size: 24px; 
         font-weight: 700;
+        padding: 0.5rem;
     }
     .logo-img img  { 
         display: block; 
@@ -24,13 +25,24 @@
         background-color: #eee;
         align-items: center;
         width: 100%;
-        height: 50px;
+        /* height: 50px; */
 }
 
 header nav ul li { 
     display: flex;
     flex: 1 1 100%;
 } 
+
+.sec-one { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+}
+.sec-two { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
 }
 
 
