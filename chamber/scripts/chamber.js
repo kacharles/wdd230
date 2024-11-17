@@ -13,5 +13,5 @@ menuBtn.addEventListener("click", () => {
 const copyright = document.querySelector("#copyright");
 const lastModified = document.querySelector("#lastModified");
 
-copyright.innerHTML = `&copy; ${new Date().getFullYear()} | Charles Alfred Koenig | WDD 230 Web Frontend Development.</span>`;
-lastModified.textContent = "Last Modified: " + document.lastModified;
+copyright.innerHTML = `&copy; ${new Date().getFullYear()} | Charles Alfred Koenig | WDD 230 Web Frontend Development</span>`;
+lastModified.textContent = "Last Updated: " + document.lastModified;

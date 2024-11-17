@@ -2,7 +2,7 @@
 * { 
     margin: 0px; 
     padding: 0px;
-    box-shadow: border-box;
+    box-sizing: border-box;
 }
 /* Styling the header and all its content*/
 
@@ -43,10 +43,13 @@ header nav {
     /* background-color: #eee; */
     align-content: center;
     justify-items: end;
+    justify-content: end;
     
 }
 header nav ul { 
     border-radius: 10px;
+    box-shadow: 0 0 12px black, inset 0 0 12px darkblue;
+    overflow: hidden;
 }
 
 /* Hide the navigation list in the small menu.
@@ -78,8 +81,10 @@ header nav a {
     color: black;
 }
 header nav a:hover { 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 255, 255);
     color: #000080;
+    box-shadow: 0 0 12px black, inset 0 0 12px;
+    font-weight: 700;
 }
 /* End of styling header content */
 
@@ -93,6 +98,8 @@ header nav a:hover {
     margin: 0 auto;
     justify-content: space-evenly;
     padding: 0;
+    box-shadow: 0 0 12px black, inset 0 0 12px darkblue;
+    overflow: hidden;
 }
 
  #mobile-menu li { 
@@ -110,12 +117,14 @@ header nav a:hover {
     font-weight: 700;
     color: black;
     padding: 1rem;
+    text-decoration: none;
 }
 
 #mobile-menu a:hover { 
-    background-color: rgba(0, 0, 0, 0.5);
-    color: blue;
-    /* padding: 0.5rem; */
+    background-color: rgb(0, 255, 255);
+    color: #000080;
+    box-shadow: 0 0 12px black, inset 0 0 12px;
+    font-weight: 700;
 }
 
 /* Adding a content to the button before and after click */
@@ -139,24 +148,32 @@ main {
 main img { 
     width: 100%;
     height: auto;
+    margin-bottom: -4px;
 }
 .hero{ 
     position: relative;
+    overflow: hidden;
     /* border: 1px solid black; */
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .hero button { 
     width: 25%;
     padding: 1rem;
-    background-color: darkblue;
+    background-color: rgb(0, 0, 139);
     color: yellow;
     font-weight: 700;
     border-radius: 5px;
     border: none;
     position: absolute;
     left: 0;
-    bottom: 1%;
+    right: 0;
+    margin: 0 auto;
+    bottom: 30px;
     cursor: pointer;
 }
+
 .sec-one { 
     font-size: 16px;
 }
@@ -211,6 +228,10 @@ footer {
     background-color: darkblue;
     color: yellow;
     text-align: center;
+}
+footer p {
+    margin: 0.5rem 0;
+    font-size: larger;
 }
 
 #copyright { 
