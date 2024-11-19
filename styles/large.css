@@ -22,7 +22,7 @@ nav #menu {
     }
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 768px) { 
     nav #menu::before { 
         content: "\2630";
     } 
@@ -56,6 +56,14 @@ nav #menu {
 
     .activate li { 
         display: block;
+    }
+
+    .hero .overlay { 
+        width: 60%;
+        bottom: 10%;
+        margin: 0 auto; 
+        left: 0;
+        right: 0;
     }
 
 }

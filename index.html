@@ -49,6 +49,19 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/accra-ghana-temple-small.webp" media="max-width: 500px">
+                <source srcset="images/accra-ghana-temple-medium.webp" media="max-width: 1000px">
+                <img srcset="images/accra-ghana-temple-large.webp" alt="Hero Image" width="200" height="100">
+            </picture>
+            <div class="overlay">
+                <p>Accra Ghana Temple Complex</p>
+                <p>57 Independence Ave</p>
+                <p>North Ridge, P.M.B. CT 209</p>
+                <p>Cantonments, Accra, Ghana</p>
+            </div> <!--End of overlay div-->
+        </div> <!--End of Hero Div-->
         <h1>
             WDD 230 Web Frontend Development
         </h1>
@@ -66,9 +79,14 @@
             <section class="card">
                 <h2>Text</h2>
                 <p>Weather Info</p>
-                <p>Number of Visits</p>
+                <p>Number of Visits: <span class="numVisits">1</span></p>
             </section>
         </div><!-- End of parent  -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.992973186838!2d-10.706350124042892!3d6.264653326115245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf0a022ede84f6c1%3A0x3be17fbba379d8d1!2sELWA%20Junction%2C%20Paynesville%2C%20Liberia!5e0!3m2!1sen!2s!4v1732041682984!5m2!1sen!2s" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div> <!--End of map div-->
     
     </main>
     <footer>
