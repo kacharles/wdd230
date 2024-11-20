@@ -33,15 +33,10 @@ header nav ul li {
     flex: 1 1 100%;
 } 
 
-.sec-one { 
+main .parent { 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     column-gap: 10px;
-}
-.sec-two { 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
 }
 }
 
