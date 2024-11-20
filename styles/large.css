@@ -67,6 +67,16 @@ nav #menu {
     }
 
 }
+@media (max-width: 500px) { 
+    .hero .overlay { 
+        bottom: 5%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .overlay p { 
+        line-height: normal;
+    }
+}
 ul li.active a{ 
     background-color: rgb(211, 211, 211);
     color: #000;  
