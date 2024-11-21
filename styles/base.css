@@ -170,7 +170,7 @@ main .map {
     box-shadow: 0 0 12px;
     margin-bottom: 1rem;
     border-radius: 10px;
-    overflow: hiddden;
+    overflow: hidden;
 }
 .map iframe { 
     width: 100%;
@@ -232,7 +232,7 @@ footer {
 }
 footer p { 
     margin: 1rem 0; 
-    font-size: 16 px; 
+    font-size: 16px; 
     font-weight: bold;
     font-family: "Merriweather", sans-serif;
 }
