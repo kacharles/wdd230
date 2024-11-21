@@ -153,12 +153,20 @@ main .parent {
 .parent .side-bar { 
     /* border: 1px solid black; */
     border-left: 2px solid black;
+    /* background-color: darkblue; */
+    padding: .15rem 0;
+
 }
+.side-bar button { 
+    font-weight: 700;
+}
+
 
 .parent section { 
     /* border: 1px dashed black; */
-    margin: 1rem 0;
-    padding: 1rem;
+    /* margin: 1rem 0; */
+    padding: .5rem;
+
 }
 
 .parent h2 {
@@ -170,7 +178,8 @@ main .parent {
 }
 
 .parent p { 
-    padding-top: 1rem;
+    /* padding-top: 0rem; */
+    padding-left: 0.2rem;
 }
 .parent img{ 
     width: 100%;
@@ -181,8 +190,10 @@ main .parent {
     filter: saturate(50%);
 }
 .parent .side-bar img { 
-    margin-top: .5rem;
+    /* margin-top: .5rem; */
     border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .parent .img-content img:hover { 
     box-shadow: 0 0 10px black;

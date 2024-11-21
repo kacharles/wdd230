@@ -8,6 +8,7 @@
 /* Set the font-family of the body to Algerian */
 body { 
     font-family: "Merriweather", sans-serif; 
+    /* background-color: #eee; */
 }
 
 header { 
@@ -39,6 +40,7 @@ header #darkBtn:hover {
     color: white;
 } */
 
+
 header, 
 footer { 
     /* background-color: rgb(119, 136, 153); lig */
@@ -49,8 +51,8 @@ footer {
     background-color: rgb(211, 211, 211);
     min-height: 4rem;
     padding: 2rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
 }
 header span { 
     align-self: center;
@@ -76,6 +78,8 @@ nav {
     /* max-width: 100%; */
     max-width: 800px;
     margin: 0 auto;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 
 nav a { 
@@ -117,6 +121,9 @@ nav #menu:hover {
 main { 
     max-width: 800px;
     margin: 0 auto; 
+    padding: 2rem;
+    background-color: #eee;
+    /* border-radius: 10px; */
 }
 
 main .hero { 
@@ -148,9 +155,9 @@ main .hero img {
     border: 2px solid rgba(0, 0, 0, 0.5);
     display: block;
     box-shadow: 0 0 12px rgba(0, 0, 0);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
+    
 }
 
 main .map { 
@@ -218,8 +225,8 @@ footer {
     display: block;
     align-content: center;
     text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
 }
 footer p { 
     margin: 1rem 0; 
