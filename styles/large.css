@@ -59,11 +59,14 @@ nav #menu {
     }
 
     .hero .overlay { 
-        width: 60%;
+        width: 50%;
         bottom: 10%;
         margin: 0 auto; 
         left: 0;
         right: 0;
+    }
+    .overlay p { 
+        font-size: 16px;
     }
 
 }
@@ -75,6 +78,7 @@ nav #menu {
     }
     .overlay p { 
         line-height: normal;
+        font-size: 16px;
     }
 }
 ul li.active a{ 
