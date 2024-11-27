@@ -13,3 +13,10 @@
     }
     
 }
+
+@media (max-width: 500px) { 
+    table { 
+        /* width: 100%; */
+        max-width: 100px;
+    }
+}
