@@ -52,13 +52,14 @@
         </ul>
     </nav>
     <main>
-        <form method="post" "https://script.google.com/macros/s/AKfycbyXwIsjtcqz1zn1kx2c0njf3u26niBP5wIqlcVDKJJCcBuaXjOiYoMpde68kjmvyJHS/exec">
-            <label for="uname">Username<input type="text" name="uname" pattern="[a-zA-Z0-9\_s]{8,}"  id="uname" required></label>
-            <label for="password">Password<input type="password" id="password" name="password" required></label>
+        <form method="POST" id="form">
+            <label for="uname">Username<input type="text" name="User Name" pattern="[a-zA-Z0-9\_s]{8,}"  id="uname" required></label>
+            <label for="password">Password<input type="password" id="password" name="Password" required></label>
             <label for="repeat-password">Repeat Password<input type="password" name="repeat-password" id="repeat-password" required></label>
-            <label for="email">Email<input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu]{10,}" placeholder="Please enter a valid email address" required></label>
-            <label for="rating">Page Rating<input type="range" name="rating" id="rating" required min="0" max="5" value="2" step="1" list="rangevalues"></label>
-            <button type="submit"  value="" submit" id="submit">Enter Form</button>
+            <label for="email">Email<input type="email" name="Email" id="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu]{10,}" placeholder="Please enter a valid email address" required></label>
+            <!-- <label for="rating">Page Rating<input type="range" name="Rating" 
+                id="rating" required min="0" max="5" value="2" step="1" list="rangevalues"></label> -->
+            <button type="submit" id="submit">Submit</button>
             <div id="message"></div>
         </form>
     </main>

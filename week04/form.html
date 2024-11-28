@@ -136,7 +136,8 @@
     <script>
       document.getElementById("form").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent the default form submission
-        document.getElementById("message").textContent = "Submitting..";
+        // document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("submit-button").textContent = "Signing up...";
         document.getElementById("message").style.display = "block";
         document.getElementById("submit-button").disabled = true;
 
@@ -182,7 +183,7 @@
             setTimeout(function () {
               document.getElementById("message").textContent = "";
               document.getElementById("message").style.display = "none";
-            }, 2600);
+            }, 5600);
           })
           .catch(function (error) {
             // Handle errors, you can display an error message here
