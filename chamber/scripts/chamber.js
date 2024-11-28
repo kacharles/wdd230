@@ -24,11 +24,11 @@ const firstDate = new Date();
 const recentDate = Date.now(); 
 const msToDays = 86400000;
 
-let numVisit = Number(window.localStorage.getItem("visitor-key")); 
+let numVisit = Number(window.localStorage.getItem("key1")); 
 
-while(numVisit == 0) { 
-    let storeDate = firstDate.getDate();
-}
+// while(numVisit == 0) { 
+//     let storeDate = firstDate.getDate();
+// }
 
 if (numVisit == 0) { 
     firstVisit.textContent = "Welcome! Let us know if you have any questions.";
@@ -42,4 +42,4 @@ else {
 
 numVisit++;
 
-localStorage.setItem("visitor-key", numVisit);
+localStorage.setItem("key1", numVisit);
