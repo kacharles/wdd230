@@ -59,12 +59,12 @@
             <label for="email">Email<input type="email" name="Email" id="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu]{10,}" placeholder="Please enter a valid email address" required></label>
             <label for="rating">Page Rating<input type="range" name="Rating" 
                 id="rating" min="1" max="5" value="1" step="1" list="rangevalues"></label>
-                <datalist id="rangevalues" style="display: flex; margin-left: .9rem;">
-                    <option style="padding: 1.3rem; display: flex;" value="1">1</option>
-                    <option style="padding: 1.3rem; display: flex;" value="2">2</option>
-                    <option style="padding: 1.3rem; display: flex;" value="3">3</option>
-                    <option style="padding: 1.3rem; display: flex;" value="4">4</option>
-                    <option style="padding: 1.3rem; display: flex;" value="5">5</option>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </datalist>
             <button type="submit" id="submit">Sign up</button>
             <div id="message"></div>
