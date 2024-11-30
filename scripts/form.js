@@ -22,7 +22,7 @@ subBtn.addEventListener("click", () => {
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent the default form submission
     // document.getElementById("message").textContent = "Submitting..";
-    document.getElementById("submit").textContent = "Submitting...";
+    document.getElementById("submit").textContent = "Signing up...";
     document.getElementById("message").style.display = "block";
     document.getElementById("submit").disabled = true;
 
