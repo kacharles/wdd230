@@ -25,6 +25,10 @@ form input {
 
 }
 
+#rating { 
+    width: 60%;
+}
+
 input:focus { 
     border-color: blue;
     /* border: 2px solid blue; */
@@ -66,12 +70,5 @@ form button {
     font-size: 16px;
 }
 #message { 
-    color: var(--error-message-color);
-    background-color: var(--error-message-bg);
-    text-align: center;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin: 0.5rem 1.5rem;
-
-    
+    border-radius: 5px;;
 }
