@@ -45,6 +45,9 @@ header nav ul li {
 }
 }
 
-
-
-
+@media (max-width:768px) {
+   main .main-cont { 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

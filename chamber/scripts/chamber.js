@@ -43,3 +43,4 @@ else {
 numVisit++;
 
 localStorage.setItem("key1", numVisit);
+

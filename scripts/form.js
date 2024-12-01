@@ -1,8 +1,15 @@
+// alert("working");
 const password = document.querySelector("#password");
 const repeatpass = document.querySelector("#repeat-password"); 
 
 const subBtn = document.querySelector("button"); 
-const message = document.querySelector("#message")
+const message = document.querySelector("#message");
+
+const dateTime = document.querySelector("#timestamp");
+
+dateTime.value = new Date();
+// dateTime.textContent = "You and me";
+
 
 subBtn.addEventListener("click", () => {
     if (password.value == repeatpass.value) { 
@@ -67,6 +74,9 @@ subBtn.addEventListener("click", () => {
             document.getElementById("message").style.display = "block";
           });
       });
+
+    
+      // console.log(new Date());
     }
     else { 
         message.textContent = "Password does not match. Please try again.";
@@ -85,4 +95,3 @@ subBtn.addEventListener("click", () => {
         
    }
 })
-
