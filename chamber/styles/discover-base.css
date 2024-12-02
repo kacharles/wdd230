@@ -93,13 +93,19 @@ header nav a:hover {
 #mobile-menu { 
     /* display: block; */
     
-    background-color: #eee;
-    color: black;
+    /* background-color: #eee; */
+    background-color: #000080;
+    /* color: black;
+     */
+     color: yellow;
     margin: 0 auto;
     justify-content: space-evenly;
     padding: 0;
-    box-shadow: 0 0 12px black, inset 0 0 12px darkblue;
+    /* box-shadow: 0 0 12px black, inset 0 0 12px darkblue; */
     overflow: hidden;
+}
+#mobile-menu.activate { 
+    border-top: 2px solid rgb(255, 255, 255, 0.2);
 }
 
  #mobile-menu li { 
@@ -115,15 +121,17 @@ header nav a:hover {
     font-size: 16px;
     text-align: left;
     font-weight: 700;
-    color: black;
+    /* color: black; */
+    color: yellow;
     padding: 1rem;
     text-decoration: none;
 }
 
 #mobile-menu a:hover { 
-    background-color: rgb(0, 255, 255);
-    color: #000080;
-    box-shadow: 0 0 12px black, inset 0 0 12px;
+    background-color: rgb(255, 255, 255, 0.2);
+    /* background-color: rgb(0, 0, 0, 0.5); */
+    /* color: #000080; */
+    /* box-shadow: 0 0 12px black, inset 0 0 12px; */
     font-weight: 700;
 }
 
