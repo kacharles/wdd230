@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/fav_icon.png" type="images/png">
     <script src="scripts/getDates.js" defer></script>
+    <script src="./week05/scripts/weather.js" defer></script>
+    
     
     <meta property="og:title" content="Charles Alfred Koenig | WDD230 | Web Frontend Development">
     <meta property="og:description" content="WDD230 Web Frontend Development Course Home Page Build">
@@ -70,13 +72,15 @@
                     <li><p>Week 02: <a href="#">Learning Activities</a></li>
                     <li><p>Week 03: <a href="#">Learning Activities</a></li>
                     <li><p>Week 04: <a href="#">Learning Activities</a></li>
+                    <li><p>Week 05: <a href="#">Learning Activities</a></li>
                 </ul>
             </section>
             <!-- Some Changes -->
 
             <section class="card">
-                <h2>Text</h2>
-                <p>Weather Info</p>
+                <h2>Information</h2>
+                <p id="town"></p>
+                <p id="weather-info"><img id="graphic" src="" alt=""><span id="temperature"></span><span id="description"></span></p>
                 <p>Number of Visits: <span class="numVisits">1</span></p>
             </section>
         </div><!-- End of parent  -->

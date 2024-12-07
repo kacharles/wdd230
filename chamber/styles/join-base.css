@@ -135,6 +135,10 @@ header nav a:hover {
     font-weight: 700;
 }
 
+#mobile-menu a.active{ 
+    background-color: rgba(0,0,0, 0.5);
+}
+
 
 /* Adding a content to the button before and after click */
 header #btn::before { 
@@ -280,7 +284,15 @@ form input[type="text"], input[type="email"], input[type="tel"] {
     border-color: #eee;
     /* color: #eee; */
     margin-left: .1rem;
+    /* border: none; */
 
+}
+
+input:focus { 
+    /* outline: none; */
+    outline-color: rgba(0,0,0, 0.5);
+    /* border: 1px solid; */
+    border-color: #ff0000;
 }
 
 #rating { 

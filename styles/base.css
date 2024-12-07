@@ -203,6 +203,7 @@ main h1 {
     overflow: hidden;
     margin: 1rem 0;
     box-shadow: 0 0 10px gray;
+    background-color: rgba(0, 0, 0, 0.5);
     
 }
 
@@ -217,10 +218,42 @@ main h1 {
     padding: 0.75rem 0;
 }
 
-.parent p { 
-    padding: 10px;
+.parent  p { 
+    padding: .5rem;
     font-family: "Merriweather", sans-serif;
-} 
+    /* align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.5); */
+    /* color: white; */
+    /* background-color: rgba(0,0,0, 0.5); */
+}
+
+
+.parent .card:nth-child(2) p{ 
+    /* background-color: green; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+    
+#town { 
+    font-weight: 700;
+    font-size: 16px;
+}
+#weather-info > img { 
+    width: 25%; 
+    height: auto;
+}
+#weather-info span { 
+    /* padding-right: 1px; */
+    /* font-size: 1px; */
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 
 footer { 
     min-height: 12rem;

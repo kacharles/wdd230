@@ -134,6 +134,9 @@ header nav a:hover {
     /* box-shadow: 0 0 12px black, inset 0 0 12px; */
     font-weight: 700;
 }
+#mobile-menu a.active{ 
+    background-color: rgba(0,0,0, 0.5);
+}
 
 /* Adding a content to the button before and after click */
 header #btn::before { 

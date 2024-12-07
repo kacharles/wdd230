@@ -136,6 +136,10 @@ header nav a:hover {
     font-weight: 700;
 }
 
+#mobile-menu a.active{ 
+    background-color: rgba(0,0,0, 0.5);
+}
+
 /* Adding a content to the button before and after click */
 header #btn::before { 
     content: "\2630";
