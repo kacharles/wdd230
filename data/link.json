@@ -1,0 +1,97 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1", 
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                { 
+                    "url": "week01/media-query.html",
+                    "link": "mQueries"
+                }
+            ]
+        },
+        { 
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html", 
+                    "title": "Design"
+                },
+                {
+                    "url": "week02/menu.html", 
+                    "title": "Menu"
+                }, 
+                {
+                    "url": "week02/bom.html", 
+                    "title": "BOM-25"
+                }
+            ]
+        }, 
+        {
+            "week": "Week 3", 
+            "links": [
+                {
+                    "url": "week03/webp.html", 
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazy.html", 
+                    "title": "Lazy"
+                },
+                {
+                    "url": "week03/srcset.html", 
+                    "title": "Srcset"
+                },
+                {
+                    "url": "week03/", 
+                    "title": "localStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4", 
+            "links": [
+                {
+                    "url": "week04/cominators.html", 
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/form.html", 
+                    "title": "Form"
+                },
+                {
+                    "url": "week04/tabebuild.html", 
+                    "title": "Table Build"
+                }, { 
+                    "url": "week04/pseudo-elements.html", 
+                    "title": "Pseudo Elements"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 5", 
+            "links": [
+                {
+                    "url": "week05/fetch-api.html", 
+                    "title": "Fetch Api"
+                },
+                {
+                    "url": "week05/json.html", 
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html", 
+                    "title": "Prophets"
+                },
+                {
+                    "url": "week05/weather.html", 
+                    "title": "Weather"
+                }
+            ]
+        }
+    ]
+}
