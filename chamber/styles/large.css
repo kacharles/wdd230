@@ -11,6 +11,10 @@
         display: block; 
     }
 
+    header nav { 
+        align-self: center;
+    }
+
     header nav button { 
         display: none;
     }
@@ -44,7 +48,13 @@ header nav ul li {
     column-gap: 5px;
 }
 }
-
+@media screen and (max-width: 768px) { 
+    header #btn { 
+        justify-content: end;
+        justify-self: end;
+        justify-items: end;
+    }
+}
 
 
 
