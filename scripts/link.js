@@ -1,31 +1,37 @@
 const baseURL = "https://kacharles.github.io/wdd230/"; 
 const linksURL = "https://kacharles.github.io/wdd230/data/link.json"; 
+const List = document.querySelector("#list");
 
 async function getLinks() {
+    console.log('Working..nicely')
     const response = await fetch(linksURL); 
     const data = await response.json(); 
-    console.log(data); 
+    // console.log(data.weeks); 
     displayLinks(data.weeks);
 }
 
 displayLinks = (links) => { 
-    console.log("Working...")
-    links.forEach((links) => {
-        //get the links element
-        //set the text content
-        //set the href attribute and value
-        let weeksList = document.querySelector("#learning-activities"); 
-        weeksList.textContent = "Thank you"; 
-        // let weekOne = document.createElement("li"); 
-        // let link1 = document.createElement("a"); 
-        // let link2 = document.createElement("a"); 
+    // console.log("Working...")
+    links.forEach((link) => {
+        let listEle = document.createElement("li"); 
+        let hlink = document.createElement("a"); 
+        let hlink1 = document.createElement("a");
+        let sp = document.createElement("span");
+        sp.textContent = "|";
+        hlink.textContent = `${link.links[0].title}`;
 
-        // weekOne.innerHTML =`Week 1:`;
-        // link.textContet = link.week[0].links.title; 
-        // link.setAttribute("href", link.weeks[0].link.url);
-
-        // weekOne.appendChild(link1);
-        // weeksList.appendChild(weekOne);
+        hlink1.textContent = `${link.links[1].title}`;
+        // console.log(link.week);
+        hlink.setAttribute("href", link.links[0].url); 
+        hlink1.setAttribute("href", link.links[1].url)
+        // hlink.setAttribute("href", link.links[1].url);
+        listEle.textContent = `${link.week}:${" "}`;
+        listEle.appendChild(hlink);
+        listEle.appendChild(sp);
+        listEle.appendChild(hlink1);
+       List.appendChild(listEle);
+        
     });
 }
+
 getLinks();

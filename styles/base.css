@@ -161,6 +161,24 @@ main .hero img {
     overflow: hidden;
     
 }
+#town-info {
+    padding: 1rem;
+}
+
+#list { 
+    padding: 1rem;
+}
+#list li { 
+    list-style: none;
+    padding: 0.5rem;
+}
+#list li a { 
+    text-decoration: none;
+    color: blue;
+}
+#list li span { 
+    padding: 0.2rem;
+}
 
 main .map { 
     width: 100%; 
