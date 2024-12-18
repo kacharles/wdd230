@@ -48,12 +48,12 @@
             "image": "images/coursera.webp", 
             "ml": "Gold"
         },
-              {
+        {
             "name": "LinkedIn Learning", 
             "address": "NA", 
             "phone": "NA", 
             "website": "https://linkedin.com", 
-            "image": "images/linkedin-learnig.webp", 
+            "image": "images/linkedinlearning.webp", 
             "ml": "Bronze"
         },
         {
@@ -61,7 +61,7 @@
             "address": "New York", 
             "phone": "NA", 
             "website": "https://datacamp.com", 
-            "image": "images/data-camp.webp", 
+            "image": "images/datacamp.webp", 
             "ml": "Gold"
         }, 
         {
@@ -69,7 +69,7 @@
             "address": "Texas", 
             "phone": "NA", 
             "website": "https://freecodecamp.org", 
-            "image": "images/free-code-camp.webp", 
+            "image": "images/thinkific.webp", 
             "ml": "Silver"
         }
     ]

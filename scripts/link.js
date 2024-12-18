@@ -12,7 +12,7 @@ async function getLinks() {
 
 displayLinks = (links) => { 
     // console.log("Working...")
-    links.forEach((link) => {
+    links.forEach(link => {
         let listEle = document.createElement("li"); 
         let hlink = document.createElement("a"); 
         let hlink1 = document.createElement("a");

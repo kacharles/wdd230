@@ -161,77 +161,21 @@ main {
 main img { 
     width: 100%;
     height: auto;
-    margin-bottom: -4px;
 }
-.hero{ 
-    position: relative;
-    overflow: hidden;
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-.hero button { 
-    width: 25%;
-    padding: 1rem;
-    background-color: rgb(0, 0, 139);
-    color: yellow;
-    font-weight: 700;
-    border-radius: 5px;
-    border: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 30px;
-    cursor: pointer;
-}
-
-.sec-one { 
-    font-size: 16px;
-}
-.sec-one .card { 
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 1rem 0;
-    overflow: hidden;
     
+#grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    /* background-color: red; */
 }
 
-.card span { 
-    background-color: darkblue;
-    color: yellow; 
-    display: block;
-    padding: 1rem;
-    text-align: center;
-}
-.card p { 
-    padding: 10px;
+#gird img { 
+    width: 50%; 
+    height: 150px;
+    border-radius: 12px;
 }
 
-/* Section two styling */
-
-.sec-two { 
-    font-size: 16px;
-}
-.sec-two .cards { 
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 1rem 0;
-    overflow: hidden;
-    
-}
-
-.cards span { 
-    background-color: darkblue;
-    color: yellow; 
-    display: block;
-    padding: 1rem;
-    text-align: center;
-}
-.cards p { 
-    padding: 10px;
-}
 
 
 footer { 

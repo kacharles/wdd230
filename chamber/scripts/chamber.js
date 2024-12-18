@@ -18,29 +18,29 @@ lastModified.textContent = "Last Updated: " + document.lastModified;
 
 // Implementing localStorage 
 
-const firstVisit = document.querySelector("#first-visit");
-const recentVisit = document.querySelector("#recent-visit"); 
-const firstDate = new Date(); 
-const recentDate = Date.now(); 
-const msToDays = 86400000;
+// const firstVisit = document.querySelector("#first-visit");
+// const recentVisit = document.querySelector("#recent-visit"); 
+// const firstDate = new Date(); 
+// const recentDate = Date.now(); 
+// const msToDays = 86400000;
 
-let numVisit = Number(window.localStorage.getItem("key1")); 
+// let numVisit = Number(window.localStorage.getItem("key1")); 
 
-// while(numVisit == 0) { 
-//     let storeDate = firstDate.getDate();
+// // while(numVisit == 0) { 
+// //     let storeDate = firstDate.getDate();
+// // }
+
+// if (numVisit == 0) { 
+//     firstVisit.textContent = `Welcome! Let us know if you have any questions.`;
+//     let storeDate = firstDate.getDate(); 
 // }
 
-if (numVisit == 0) { 
-    firstVisit.textContent = "Welcome! Let us know if you have any questions.";
-    let storeDate = firstDate.getDate(); 
-}
-
-else { 
-    firstVisit.textContent = numVisit;
-}
+// else { 
+//     firstVisit.textContent = numVisit;
+// }
 
 
-numVisit++;
+// numVisit++;
 
-localStorage.setItem("key1", numVisit);
+// localStorage.setItem("key1", numVisit);
 
