@@ -162,27 +162,134 @@ main img {
     width: 100%;
     height: auto;
 }
+
+main .menu-btn {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    column-gap: 5px;
+    justify-content: center;
     
-main #grid { 
+}
+main .menu-btn button {
+    border: none;
+    background-color: #eee;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+main .menu-btn button:hover {
+    background-color: white;
+    color: black;
+}
+    
+main .grid { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     /* background-color: red; */
     /* background-color: white; */
-    margin-top: 1rem 0;
+    /* margin-top: 1rem 0; */
 }
-#grid section { 
+.grid section { 
     background-color: white;
     box-shadow: 0 0 10px #000;
+    text-align: center;
+    border-radius: 5px;
 }
 
-main #gird img { 
-    width: 50%; 
+main .gird section img { 
+    width: 100%; 
     height: 150px;
     border-radius: 12px;
 }
+main hr { 
+    margin-bottom: 0.5rem;
+}
 
+
+/* List and Grid View Implementation */
+
+.grid {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* background-color: red; */
+    /* background-color: white; */
+    /* margin-top: 1rem 0; */
+}
+
+.grid section {
+	background-color: white;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    overflow: hidden;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+} 
+
+.list {
+	display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+	flex-direction: column;
+    
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	/* font-family: Roboto, Helvetica, sans-serif; */
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
 
 
 footer { 
@@ -200,4 +307,8 @@ footer p {
 
 #copyright { 
     color: white; 
+}
+.active { 
+    background-color: #000080;
+    color: yellow;
 }

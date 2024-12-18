@@ -34,7 +34,7 @@
         <nav>
             <button id="btn"></button>
             <ul id="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -43,7 +43,7 @@
     </header>
             <div id="drop-down">
                     <ul id="mobile-menu" class="mobile-menu" >
-                        <li><a class="active" ="index.html">Home</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
@@ -58,13 +58,18 @@
                 <source media="(min-width:1200px)" srcset="images/cham-lg.webp">
                 <img src="images/cham-sm.webp" alt="Chamer Logo" width="2" height="1">
             </picture>
-            <a href="join.html"><button>Join</button></a>
+            <a href="join.html" style="font-size: 20px;"><button>Join</button></a>
         </div>
 
         <div class="sec-one">
             <section class="card">
-                <span>Event</span>
+                <span style="font-size: 18px; font-weight: 700;">Event Description</span>
                 <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Provident placeat dolores saepe ratione laborum doloremque ea 
+                    deserunt, culpa rerum mollitia earum. At quam sunt deserunt 
+                    perspiciatis consequatur ullam rerum facilis?
+
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Provident placeat dolores saepe ratione laborum doloremque ea 
                     deserunt, culpa rerum mollitia earum. At quam sunt deserunt 
@@ -73,7 +78,7 @@
             </section>
 
             <section class="card">
-                <span>Weather</span>
+                <span style="font-size: 18px; font-weight: 700;" >Weather Info</span>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Provident placeat dolores saepe ratione laborum doloremque ea 
@@ -85,21 +90,21 @@
         <h2>Membership Spotlight</h2>
             <div class="sec-two">
                 <section class="cards">
-                    <span>Some Content</span>
+                    <span style="font-size: 18px; font-weight: 700;" >Business Highlight</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Alias culpa aut nemo perferendis aspernatur, assumenda consectetur 
                         est incidunt beatae repellendus dicta nostrum nihil architecto qui 
                         corrupti deserunt pariatur maxime facilis!</p>
                 </section>
                 <section class="cards">
-                    <span>Some Content</span>
+                    <span style="font-size: 18px; font-weight: 700;" >Sponsors Recognition</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Alias culpa aut nemo perferendis aspernatur, assumenda consectetur 
                         est incidunt beatae repellendus dicta nostrum nihil architecto qui 
                         corrupti deserunt pariatur maxime facilis!</p>
                 </section>
                 <section class="cards">
-                    <span>Some Content</span>
+                    <span style="font-size: 18px; font-weight: 700;" >Networking Opportunities</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Alias culpa aut nemo perferendis aspernatur, assumenda consectetur 
                         est incidunt beatae repellendus dicta nostrum nihil architecto qui 
@@ -112,7 +117,7 @@
 
     <footer>
         <p id="copyright"></p>
-        <p id="contact">Contact: 📞 +23177072935 | ✉ ckoenig@byupathway.edu</p>
+        <p id="contact">Contact: 📞 <a href="tel:" style="color: yellow; text-decoration: none;">+23177072935</a> | <a style="color: yellow; text-decoration: none;" href="mailto:">✉ ckoenig@byupathway.edu</a></p>
         <p id="lastModified"></p>
     </footer>
 </body>

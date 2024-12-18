@@ -247,3 +247,7 @@ footer p {
 #copyright { 
     color: white; 
 }
+.active { 
+    background-color: #000080;
+    color: yellow;
+}

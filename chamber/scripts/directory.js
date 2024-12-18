@@ -1,6 +1,6 @@
 
 
-const url = "https://kacharles.github.io/wdd230/chamber/data/member.json"; 
+const url = "https://kacharles.github.io/wdd230/chamber/data/members.json"; 
 console.log(url);
 
 async function getData() { 
@@ -13,7 +13,7 @@ async function getData() {
 
 displayInfo = (members) => { 
     members.forEach((member) => { 
-        const main = document.querySelector("#grid"); 
+        const main = document.querySelector(".grid"); 
         let sectionEle = document.createElement("section"); 
         let portrait = document.createElement("img"); 
         let heading = document.createElement("h3"); 
@@ -40,3 +40,24 @@ displayInfo = (members) => {
     });
 }
 getData();
+
+const gridbutton = document.querySelector("#gridv");
+const listbutton = document.querySelector("#listv");
+const display = document.querySelector(".grid");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+    // alert("button is clicked");
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    // alert("button is clicked")
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
