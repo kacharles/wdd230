@@ -167,10 +167,16 @@ main img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
+    row-gap: 10px;
     /* background-color: red; */
+    /* background-color: white; */
+}
+#grid section { 
+    background-color: white;
+    box-shadow: 0 0 10px #000;
 }
 
-#gird img { 
+main #gird img { 
     width: 50%; 
     height: 150px;
     border-radius: 12px;
