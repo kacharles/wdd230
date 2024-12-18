@@ -163,13 +163,14 @@ main img {
     height: auto;
 }
     
-#grid { 
+main #grid { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     /* background-color: red; */
     /* background-color: white; */
+    margin-top: 1rem 0;
 }
 #grid section { 
     background-color: white;
