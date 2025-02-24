@@ -43,12 +43,16 @@ header,
 footer { 
     /* background-color: rgb(119, 136, 153); lig */
     display: flex;
-    max-width: 800px;
+    /* max-width: 100%; */
     margin: 0 auto; 
     justify-content: center;
     background-color: rgb(211, 211, 211);
     min-height: 4rem;
     padding: 2rem;
+}
+
+header, main, nav, footer { 
+    max-width: 900px;
 }
 header span { 
     align-self: center;
@@ -70,7 +74,7 @@ nav {
     background-color: #000000;
     /* margin: 0 auto; */
     /* max-width: 100%; */
-    max-width: 800px;
+    /* max-width: 100%; */
     margin: 0 auto;
 }
 
@@ -111,9 +115,30 @@ nav #menu:hover {
 /* Styling the boody */
 
 main { 
-    max-width: 800px;
+    /* max-width: 100%; */
     margin: 0 auto; 
+    position: relative;
 }
+main .hero  { 
+    width: 100%; 
+    position: relative;
+}
+main img { 
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+.hero span { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem 2vh;
+
+}
+
 
 main h1 { 
     padding: 0.75rem; 

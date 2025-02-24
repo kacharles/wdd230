@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Money Transaction</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <h1>Orange Money Transaction</h1>
+        </nav>
+    </header>
+
+        <label for="phone"><input type="number" name="phone" id="phone"></label>
+        <button id="btn">Click Now</button>
+        <a id="mylink"></a>
+    <script>
+        const btn = document.querySelector('#btn');
+        const phoneNumber = document.querySelector('#phone'); 
+        const mylink = document.querySelector('#mylink');
+        const getNumber = `${phoneNumber.value}`;
+    
+        btn.addEventListener("click", () => { 
+            mylink.setAttribute("href", getNumber.toString());   
+            mylink.textContent = "Link";
+            // mylink.click(); 
+            // mylink.click();
+        })
+    </script>
+</body>
+</html>

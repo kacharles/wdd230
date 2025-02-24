@@ -9,6 +9,7 @@ const ul = document.querySelectorAll('.navigation');
 const isSelected = false;
 const ullist = document.querySelectorAll('.navigation li');
 
+
 // Adding an active script to the page
 ullist.forEach(ele => {
     ele.addEventListener("click", () => { 
@@ -19,7 +20,6 @@ ullist.forEach(ele => {
 // Dynamically adding the footer to the page 
 year.innerHTML = `&copy; ${new Date().getFullYear()} 🌴 Charles Alfred Koenig 🌴 Monrovia, Liberia.</span>`;
 lmf.textContent = "Last Modified: " + document.lastModified;
-
 
 const menuBtn = document.querySelector('#menu');
 const navList = document.querySelector('ul'); 
