@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/fo">
     <link rel="icon" href="images/fav_icon.png" type="images/png">
     <script src="scripts/getDates.js" defer></script>
-    <script src="./week05/scripts/weather.js" defer></script>
-    <script src="scripts/link.js" defer></script>
-    
+    <script src="scripts/form.js" defer></script>
     
     <meta property="og:title" content="Charles Alfred Koenig | WDD230 | Web Frontend Development">
     <meta property="og:description" content="WDD230 Web Frontend Development Course Home Page Build">
@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Play:wght@400;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
-    <title>Charles Alfred Koenig - WDD230 WEB Frontend Development</title>
+    <title>Form</title>
 </head>
 <body>
 
@@ -52,47 +52,26 @@
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/charles_koenig_small_hero.webp" media="(max-width: 500px)">
-                <source srcset="images/charles_koenig_medium_hero.webp" media="(max-width: 1000px)">
-                <img src="images/charles_koenig_large_hero.webp" alt="Charles Alfred Koenig" 
-                width="500" height="250">
-            </picture>
-            <span id="name-tag">Charles Alfred Koenig</span>
-        </div>
-      
-        <h1>
-            WDD 230 Web Frontend Development
-        </h1>
-        <div class="parent">
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <ul id="list">
-                    <!-- <li><p>Week 01: <a href="#">Learning Activities</a></li>
-                    <li><p>Week 02: <a href="#">Learning Activities</a></li>
-                    <li><p>Week 03: <a href="#">Learning Activities</a></li>
-                    <li><p>Week 04: <a href="#">Learning Activities</a></li>
-                    <li><p>Week 05: <a href="#">Learning Activities</a></li> -->
-                </ul>
-            </section>
-            <!-- Some Changes -->
+        <form method="POST" id="form">
+            <label for="uname">Username<input type="text" name="User Name" pattern="[a-zA-Z0-9\_s]{8,}"  id="uname" required></label>
+            <label for="password">Password<input type="password" id="password" name="Password" required></label>
+            <label for="repeat-password">Repeat Password<input type="password" name="repeat-password" id="repeat-password" required></label>
+            <label for="email">Email<input type="email" name="Email" id="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu]{10,}" placeholder="Please enter a valid email address" required></label>
+            <label for="rating">Page Rating<input type="range" name="Rating" 
+                id="rating" min="1" max="5" value="1" step="1" list="rangevalues"></label>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </datalist>
+            <input type="hidden" id="timestamp" name="Date Time" hidden/>
 
-            <section class="card">
-                <h2>Information</h2>
-                <div id="town-info">
-                <p id="town"></p>
-                <p id="weather-info"><img id="graphic" src="https://openweathermap.org/img/wn/02n@2x.png" alt="Img"><span id="temperature"></span><span id="description"></span></p>
-                <p>Number of Visits: <span class="numVisits">1</span></p>
-                </div>
-            </section>
-        </div><!-- End of parent  -->
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.992973186838!2d-10.706350124042892!3d6.264653326115245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf0a022ede84f6c1%3A0x3be17fbba379d8d1!2sELWA%20Junction%2C%20Paynesville%2C%20Liberia!5e0!3m2!1sen!2s!4v1732041682984!5m2!1sen!2s" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        </div> <!--End of map div-->
-    
+            <!-- <label for="dateTime" id="date" name="Date String"></label> -->
+            <button type="submit" id="submit">Sign up</button>
+            <div id="message"></div>
+        </form>
     </main>
     <footer>
         <p id="year"></p>

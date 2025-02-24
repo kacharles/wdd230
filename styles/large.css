@@ -16,21 +16,22 @@ nav #menu {
 @media only screen and (min-width: 40rem) { 
     .parent { 
         display: grid; 
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 4fr 3fr;
         column-gap: 10px; 
 
     }
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 768px) { 
     nav #menu::before { 
         content: "\2630";
-    }
+    } 
+    
     nav #menu.activate::before { 
         content: "X";
         border-bottom: 2px solid white;
         display: block;
-    }
+    } 
 
     nav #menu { 
         padding: 0px;
@@ -57,8 +58,31 @@ nav #menu {
         display: block;
     }
 
+    .hero .overlay { 
+        width: 50%;
+        bottom: 10%;
+        margin: 0 auto; 
+        left: 0;
+        right: 0;
+    }
+    .overlay p { 
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 500px) { 
+    .hero .overlay { 
+        bottom: 5%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .overlay p { 
+        line-height: normal;
+        font-size: 16px;
+    }
 }
 ul li.active a{ 
     background-color: rgb(211, 211, 211);
-    color: black;  
+    color: #000;  
 }
+
